@@ -1,0 +1,71 @@
+// buttons
+.btn
+  border: none
+  box-shadow: none
+  border-radius: inherit
+  font-size: 1.65rem
+  font-family: $primary-font
+  padding: 0.8em 1.2em
+  cursor: pointer
+  text-transform: uppercase
+  //font-weight: 600
+  -webkit-appearance: inherit
+  +transition(all 0.3s ease-in-out)
+  &_ghost
+    +btnGhost
+  &_line
+    border-width: 2px
+    border-style: solid
+  &_innove
+    border-color: $gainsboro
+    color: white
+    background-color: transparent
+    transition: $trs-site
+    white-space: inherit !important
+    +press
+      border-color: transparent
+      color: white
+      background-color: $OPTGreen
+  &--full
+    width: 100%
+    display: block
+  &-box
+    display: block
+    position: absolute
+    left: 12px
+    right: auto
+    top: 0px
+    z-index: 12
+    margin-top: 0px
+    +MQ(M)
+      right: 0px
+      left: inherit
+      margin-top: inherit
+  &_site
+    color: $white
+    text-transform: uppercase
+    +press
+      color: $OPTGreen
+    span.icon
+      &:after
+        content: "+"
+        margin-right: 12px
+    &--gray
+      background-color: $OPTGray
+      color: $white
+      text-transform: uppercase
+    &--green
+      background-color: $OPTGreen
+      color: $white
+      text-transform: uppercase
+    &--black
+      background-color: $black
+      color: $white
+      text-transform: uppercase
+      letter-spacing: .13rem
+.disabled
+  cursor: no-drop
+  +press
+    color: $silver
+    p
+      color: $silver

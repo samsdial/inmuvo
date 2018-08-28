@@ -1,0 +1,63 @@
+// text.sass
+.title,
+.subtitle,
+.paragraf
+  display: block
+// Title Line Site
+.title
+  &_line
+    position: relative
+    +header
+      &:after
+        content: ""
+        display: inline-block
+        width: 127px
+        height: 2px
+        position: absolute
+        left: 50%
+        bottom: 0
+    &_green
+      +header
+        &:after
+          background-color: $OPTGreen
+    &_black
+      +header
+        &:after
+          background-color: $black
+//.tag_data
+.txt
+  &_ffSecond
+    font-family: $second-font
+    font-weight: 900
+    p
+      font-family: $second-font
+      font-weight: 900
+    +header
+      font-family: $second-font
+      font-weight: 900
+  &_italic
+    font-style: italic
+  &_bold
+    font-weight: 900
+    letter-spacing: 0.09rem
+  &_center
+    text-align: center
+  &_upper
+    text-transform: uppercase
+  &_capital
+    text-transform: capitalize
+  &_right
+    text-align: right
+  &_size
+    &--min
+      +font-size(2.5)
+    &--med
+      +font-size(5.5)
+    &--max
+      +font-size(6.5)
+
+.h2
+  p
+    font-size: 2rem
+  +header
+    font-size: 2rem

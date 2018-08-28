@@ -1,0 +1,54 @@
+// forms
+
+fieldset
+  border: none
+
+//input:-webkit-autofill,
+//input:-webkit-autofill:hover,
+//input:-webkit-autofill:focus
+//  border: none
+//  -webkit-text-fill-color: $steelblue
+//  -webkit-box-shadow: 0 0 0px 1000px $white inset
+//  transition: background-color 5000s ease-in-out 0s
+
+.form_column
+  position: relative
+  display: inline-block
+  padding: 95px 15px 100px 100px
+  vertical-align: top
+  +MQMAX(S)
+    padding: 95px 25px
+
+select.form-control-lg
+  &:not([size]):not([multiple])
+    height: calc(3.875rem + 2px)
+select,
+textarea,
+input
+  &.form-control-lg
+    padding: 1.2rem 1.2rem
+.form-group
+  margin-bottom: 2rem
+  input.col
+    display: inline-block
+    width: 20%
+    &:nth-child(2)
+      width: 57%
+  select,
+  textarea,
+  input
+    &.form-control
+      background-color: $gainsboro
+      border-radius: 0px
+      border: none
+      transition: $trs-site
+      &::placeholder
+        color: $black
+        transition: $trs-site
+      &:hover
+        background-color: $OPTGreen
+        color: $white
+        &::placeholder
+          color: $white
+      &:focus
+        box-shadow: 0 0 0 0.2rem rgba($OPTGreen,.25)

@@ -1,0 +1,71 @@
+@font-face
+  font-family: 'icomoon'
+  //src: url('../fonts/icomoon.eot?sdq402')
+  //src: url('../fonts/icomoon.eot?sdq402#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?sdq402') format('truetype'), url('../fonts/icomoon.ttf?sdq402') format('woff'),url('../fonts/icomoon.svg?sdq402#icomoon') format('svg')
+  font-weight: normal
+  font-style: normal
+
+.icon
+  display: inline-block
+  &_item
+    display: inline-block
+    background-position: center bottom
+    background-repeat: no-repeat
+    -webkit-background-size: contain
+    background-size: 100%
+  &_social
+    &:after
+      content: ""
+      display: inline-block
+      background-position: 0 0
+      background-repeat: no-repeat
+      -webkit-background-size: contain
+      background-size: contain
+      vertical-align: middle
+  &_social
+    &:after
+      width: 25px
+      height: 25px
+    &--facebook
+      &:after
+        background-image: url('../img/icon_facebook.png')
+    &--twitter
+      &:after
+        background-image: url('../img/icon_twitter.png')
+    &--instagram
+      &:after
+        background-image: url('../img/icon_instagram.png')
+    &--pinterest
+      &:after
+        background-image: url('../img/icon_pinterest.png')
+    &--youtube
+      &:after
+        background-image: url('../img/icon_youtube.png')
+    &--linkedin
+      &:after
+        background-image: url('../img/icon_linkedin.png')
+  &_item
+    width: 15px
+    height: 15px
+    &--phone
+      background-image: url('../img/icon_phone.png')
+    &--email
+      background-image: url('../img/icon_email.png')
+    &--fax
+      background-image: url('../img/icon_fax.png')
+
+  &_customer
+    width: 156px
+    height: 67px
+    display: block
+    position: relative
+    background-position: 0 0
+    background-repeat: no-repeat
+    -webkit-background-size: contain
+    background-size: contain
+    &_hpe
+      background-image: url('../img/customers_hpe.png')
+    &_adobe
+      background-image: url('../img/customers_adobe.png')
+    &_zebra
+      background-image: url('../img/customers_zebra.png')

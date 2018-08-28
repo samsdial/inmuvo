@@ -1,0 +1,88 @@
+// global
+// global
+// *, *::after, *::before
+//     @include box-sizing(border-box)
+html *
+  -ms-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  // font-family: sans-serif
+  // font-size: 16px
+  -ms-text-size-ajust: 100%
+  -moz-text-size-ajust: 100%
+  -webkit-text-size-ajust: 100%
+  text-size-ajust: 100%
+//background-color: #FFF
+// color: $gray
+html
+  font-size: 62.5%
+body
+  overflow-x: hidden
+  font-size: 1.6rem
+  font-family: $primary-font
+  background-color: $gainsboro
+
+a
+  text-decoration: none
+  color: $silver
+  font-size: 1.4rem
+  +transition(all 0.3s ease-in-out)
+  +press
+    text-decoration: none
+    color: $OPTGreen
+  +MQ(S)
+    font-size: 1.6rem
+img
+  max-width: 100%
+
+input, textarea, select
+  font-family: $primary-font
+  font-size: 1.6rem
+
+p
+  font-weight: 400
+  color: $black
+  line-height: 1.5em
+  +font-size(1.8)
+  margin: 0
+  position: relative
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+  font-weight: 400
+/* headings */
+h1
+  +font-size(3.2)
+h2
+  +font-size(2.8)
+h3
+  +font-size(2.4)
+h4
+  +font-size(2)
+h5
+  +font-size(1.6)
+h6
+  +font-size(1.2)
+
+
+b
+  font-weight: 800
+
+ul, li
+  list-style: none
+  margin: 0px
+ul, ol
+  padding-left: 0px
+
+pre
+  display: block
+  margin-top: 2rem
+  margin-bottom: 2rem
+  font-size: 12px
+  background-color:  $silver
+  border: 1px solid $gray
+  color: $black
+  padding: 22px
+  border-radius: 12px

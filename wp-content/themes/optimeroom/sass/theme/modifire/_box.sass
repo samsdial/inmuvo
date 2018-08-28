@@ -1,0 +1,66 @@
+// box
+.box
+  &_triangle
+    position: relative
+    &:after
+      content: ""
+      border-style: solid
+      border-width: 20px 25px 0px 25px
+      border-color: $white transparent transparent transparent
+      position: absolute
+      left: 41%
+      bottom: -20px
+      +MQ(S)
+        left: 49%
+  &_title
+    &_line
+      position: relative
+      padding-bottom: 27px
+      &:after
+        content: ""
+        display: block
+        width: 111px
+        height: 2px
+        margin: 25px auto
+      &_green
+        &:after
+          background-color: $OPTGreen
+      &_black
+        &:after
+          background-color: $black
+  &_shadow
+    box-shadow: 0 1px 1px rgba($black, .05)
+  &_logo
+    position: relative
+    padding: 5px 0
+    display: inline-block
+    width: 350px
+    +MQMAX(S)
+      width: 210px
+      margin: 0 3%
+    +MQ(M)
+      width: 400px
+    &+.navbar-toggler
+      margin-right: 5px
+  &_site
+    height: auto
+    // min-height: 250vh
+    // max-height: 100vh
+    overflow: hidden
+    &--left
+      padding: 40px 10px
+      +MQ(S)
+        padding: 40px 100px 40px 150px
+
+    &--right
+      padding: 40px 10px
+      +MQ(S)
+        padding: 40px 150px 40px 100px
+  &_top--service
+    position: relative
+    top: -122px
+.order-xs-last
+  +MQMAX(S)
+    -webkit-box-ordinal-group: 14
+    -ms-flex-order: 13
+    order: 13
