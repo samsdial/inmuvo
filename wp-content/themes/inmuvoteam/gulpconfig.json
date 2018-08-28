@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "localhost/optime_news_room",
+    "proxy": "localhost/inmuvo_room/",
     "notify": false
   },
   "browserSyncWatchFiles" : [
